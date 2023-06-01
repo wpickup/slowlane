@@ -403,7 +403,7 @@ body {
 main {
   background: #fff;
   /* background: #dc423b; */
-  color: #fff;
+  color: #000;
 }
 
 article.post {
@@ -411,6 +411,7 @@ article.post {
   /* background: #dcd9d4; */
   color: #000;
 }
+
 a {
   color: inherit;
   text-decoration: underline;
