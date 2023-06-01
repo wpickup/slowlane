@@ -113,10 +113,11 @@ GEM
 PLATFORMS
   arm64-darwin-22
   x86_64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
   bridgetown (~> 1.2.0)
   puma (~> 5.6)
 
 BUNDLED WITH
-   2.4.12
+   2.4.13
