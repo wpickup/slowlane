@@ -396,8 +396,8 @@ sup {
 /* @group Colour */
 
 body {
-	color: #c8c3bb;
-	background: rgb(67, 65, 63);
+  color: #c8c3bb;
+  background: rgb(67, 65, 63);
 }
 
 main {
@@ -411,7 +411,7 @@ article.post {
   /* background: #dcd9d4; */
   color: #000;
 }
-*/ a {
+a {
   color: inherit;
   text-decoration: underline;
   text-decoration-color: rgba(0, 0, 0, 0.3);
