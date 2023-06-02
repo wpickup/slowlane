@@ -291,8 +291,13 @@ sup {
 /* @group Colour */
 
 body {
+<<<<<<< HEAD
   color: #c8c3bb;
   background: #000; /* rgb(67, 65, 63) */
+=======
+  color: #c8c3bb; 
+  background: rgb(67, 65, 63);
+>>>>>>> main
 }
 
 main {
