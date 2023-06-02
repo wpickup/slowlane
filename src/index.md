@@ -7,9 +7,6 @@ layout: home
 <article class="post">
 
 <header>
-<div class="hgroup">
-<h1> William Pickup</h1>
-</div>
 
 <div class="introblock">
 <p>
