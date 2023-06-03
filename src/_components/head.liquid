@@ -5,6 +5,20 @@
 
 <meta name="description" content="{{ metadata.description }}" />
 
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link rel=preload as=style href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+<link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media=print onload='this.media="all"'>
 <link rel="stylesheet" href="{% asset_path css %}" />
 <script src="{% asset_path js %}" defer></script>
+
+<script>
+var root = document.getElementsByTagName('html')[0];
+root.className += ' js';
+if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+    root.className += ' isSafari';
+    if ((navigator.userAgent.indexOf('Version/16.1') != -1) || (navigator.userAgent.indexOf('Version/16.2') != -1) || (navigator.userAgent.indexOf('Version/16.3') != -1)) {
+        root.className += ' isSafari16';
+    }
+}
+</script>
 {% live_reload_dev_js %}

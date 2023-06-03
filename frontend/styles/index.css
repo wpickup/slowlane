@@ -142,6 +142,16 @@ svg {
 
 /* @end */
 
+@font-face {
+  font-family: "roboto_flexregular";
+  src: url("/fonts/robotoflexgradxopqxtrayopqytasytdeytfiytlcytucopszslntwdthwght-webfont.woff2")
+      format("woff2"),
+    url("/fonts/robotoflexgradxopqxtrayopqytasytdeytfiytlcytucopszslntwdthwght-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* @group Webfonts */
 
 @font-face {
@@ -291,13 +301,8 @@ sup {
 /* @group Colour */
 
 body {
-<<<<<<< HEAD
   color: #c8c3bb;
   background: #000; /* rgb(67, 65, 63) */
-=======
-  color: #c8c3bb; 
-  background: rgb(67, 65, 63);
->>>>>>> main
 }
 
 main {
@@ -1061,8 +1066,8 @@ body {
 }
 
 h1 {
-  font-family: "Lato", "Literata", "Hoefler Text", "Cambria", "Roboto Slab",
-    Georgia, "Times New Roman", serif;
+  font-family: "Literata", "Hoefler Text", "Cambria", "Roboto Slab", Georgia,
+    "Times New Roman", serif;
   color: rgba(0, 0, 0, 0.8);
   font-weight: 900;
   text-align: center;
@@ -1117,8 +1122,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lato", "Literata", "Hoefler Text", "Cambria", "Roboto Slab",
-    Georgia, "Times New Roman", serif;
+  font-family: "Literata", "Hoefler Text", "Cambria", "Roboto Slab", Georgia,
+    "Times New Roman", serif;
 }
 
 blockquote {
@@ -1625,8 +1630,8 @@ form.search {
 /* @group Masthead */
 
 #logo {
-  font-family: "Lato", "Literata", "Cambria", "Roboto Slab", Georgia,
-    "Times New Roman", serif;
+  font-family: "Literata", "Cambria", "Roboto Slab", Georgia, "Times New Roman",
+    serif;
   font-weight: 850;
   font-variation-settings: "opsz" 52;
 }
@@ -1675,133 +1680,6 @@ footer.global .icons a {
 /* @end */
 
 /* @group Post-specific styling */
-
-@font-face {
-  font-family: "Museo";
-  src: url("/fonts/museo700.woff") format("woff");
-  font-weight: 700;
-}
-h2.museo {
-  font-family: "Museo", serif;
-}
-
-/* @end */
-
-/* @group Prism */
-
-/* PrismJS 1.15.0
-https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript */
-/**
- * prism.js default theme for JavaScript, CSS and HTML
- * Based on dabblet (http://dabblet.com)
- * @author Lea Verou
- */
-
-code[class*="language-"],
-pre[class*="language-"] {
-  text-align: left;
-  white-space: pre-wrap;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
-
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
-
-  -webkit-hyphens: manual;
-  hyphens: manual;
-}
-
-/* Code blocks */
-pre[class*="language-"] {
-  overflow: auto;
-}
-
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-}
-
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-  padding: 0.1em;
-  border-radius: 0.3em;
-  white-space: normal;
-}
-
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-  color: slategray;
-}
-
-.token.punctuation {
-  color: #999;
-}
-
-.namespace {
-  opacity: 0.7;
-}
-
-.token.property,
-.token.tag,
-.token.boolean,
-.token.number,
-.token.constant,
-.token.symbol,
-.token.deleted {
-  color: #905;
-}
-
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.inserted {
-  color: #690;
-}
-
-.token.operator,
-.token.entity,
-.token.url,
-.language-css .token.string,
-.style .token.string {
-  color: #9a6e3a;
-  /*background: hsla(0, 0%, 100%, .5);*/
-}
-
-.token.atrule,
-.token.attr-value,
-.token.keyword {
-  color: #07a;
-}
-
-.token.function,
-.token.class-name {
-  color: #dd4a68;
-}
-
-.token.regex,
-.token.important,
-.token.variable {
-  color: #e90;
-}
-
-.token.important,
-.token.bold {
-  font-weight: 600;
-}
-.token.italic {
-  font-style: italic;
-}
-
-.token.entity {
-  cursor: help;
-}
-
-/* @end */
 
 /* WP from Bridgetown defaults */
 body > header img {
