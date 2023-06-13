@@ -1,30 +1,26 @@
 ---
 layout: default
 title: Posts
+permalink: /posts/
+template_engine: erb
 paginate:
   collection: posts
 ---
 
-<ul>
-  {% for post in paginator.resources %}
+<ul class="posts-ul">
+  <% paginator.resources.each do |post| %>
     <li>
-      <a href="{{ post.relative_url }}">{{ post.data.title }}</a>
+      <a href="<%= post.relative_url %>">
+        <posts-li-title>
+          <%= post.data.title %>
+        </posts-li-title>
+        <posts-li-subtitle>
+          <%= post.data.subtitle %>
+        </posts-li-subtitle>
+        <posts-li-date>
+          <small><%= post.date.strftime("%Y-%m-%d") %></small>
+        </posts-li-date>
+      </a>
     </li>
-  {% endfor %}
+  <% end %>
 </ul>
-
-{% if paginator.total_pages > 1 %}
-
-  <ul class="pagination">
-    {% if paginator.previous_page %}
-    <li>
-      <a href="{{ paginator.previous_page_path }}">Previous Page</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li>
-      <a href="{{ paginator.next_page_path }}">Next Page</a>
-    </li>
-    {% endif %}
-  </ul>
-{% endif %}
