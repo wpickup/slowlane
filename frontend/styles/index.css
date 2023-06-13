@@ -1677,3 +1677,10 @@ body > header img {
   width: 400px;
   max-width: 100%;
 }
+
+posts-li-date,
+posts-li-subtitle,
+posts-li-title,
+post-footer {
+  display: block;
+}
