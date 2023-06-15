@@ -42,14 +42,17 @@ You can find my occasionally updated blog <a href="https://social.williampickup.
 
 </header>
 
-### Recent posts
+<h2>Latest posts</h2>
+<small><a href="{{ '/posts' | relative_url }}">See All Posts</a></small>
 
-<small>[👉 See all]({{ '/posts' | relative_url }})</small>
+{% assign counter = 0 %}
 
 <ul>
   {% for post in collections.posts.resources %}
+  {% assign counter = counter | plus: 1 %}
     <li>
       <a href="{{ post.relative_url }}">{{ post.data.title }}</a>
     </li>
+    {% if counter == 3 %} {% break %} {% endif %}
   {% endfor %}
 </ul>
