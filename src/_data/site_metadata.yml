@@ -4,7 +4,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.metadata.myvariable }}.
 
-title: Slowlane
+title: William Pickup
 tagline: One slow step at a time
 email: au.slowlane@gmail.com
 description: >-
