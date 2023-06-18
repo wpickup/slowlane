@@ -1,0 +1,10 @@
+<li class="nav-social-links" >
+  <% links.each.with_index do |(name, url), i| %>
+    <nav-social-link>
+      <a href="<%= url %>" rel="me" title="<%= name %>">
+        <% imgurl = "/images/#{name.downcase}.svg" %>
+        <img src="<%= relative_url imgurl %>">
+      </a>
+    </nav-social-link>
+  <% end %>
+</li>
