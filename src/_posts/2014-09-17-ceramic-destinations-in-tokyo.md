@@ -4,17 +4,15 @@ slug: ceramics-destinations-in-tokyo
 date: 2014-09-17 00:00:00 +0000
 layout: post
 categories: 
-  - Craft
-  - Travel
-tags:
-
+- Craft
+- Travel
 ---
 The most popular post on Slowlane has been [Ceramics Destinations in Kyoto](http://www.williampickup.org/blog/ceramics-destinations-in-kyoto), this post seeks to provide the same information for a Tokyo visitor.
 <!--read_more-->
 
 ***
 #### [Mingeikan](http://www.mingeikan.or.jp/english/info/ "Mingeikan")
-![Mingeikan Sign](/images/_IMG-0063-1024x591.jpg)
+![Mingeikan Sign](images/_IMG-0063-1024x591.jpg)
 
 Also known as the Japan Folk Crafts Museum. [Soetsu Yanagi](http://en.m.wikipedia.org/wiki/Yanagi_S%C5%8Detsu) [^3] created this museum to display his collection of mingei items (daily necessities made by common people using local materials)It displays a collection of mingei pottery, textiles and lacquer ware. Feature [exhibitions](http://www.mingeikan.or.jp/english/exhibition/) are also held regularly. During our visit the main gallery was showing "KANTHA and SASHIKO - Needle Works from Bengal and Tohoku".
 
