@@ -4,11 +4,6 @@ title: About
 ---
 
 <p>
-  I live on <a href="">Sydneys' Northern Beaches</a>,
-  where I enjoy and <a href="">running</a>, <a href="">swimming</a>, and
-  <a href="">slowly making things in my workshop</a>.
-</p>
-<p>
   I have been interested in <a href="">music</a>, <a href="">alternative lifestyles</a> and <a href="">technology</a> since the <a href="">70's</a>.
 </p>
 <p>

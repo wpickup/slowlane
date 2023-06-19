@@ -2,11 +2,9 @@
 layout: page
 ---
 
-<main class="home archive">
-
 <header>
 <p>
-  Hi, I'm William (sometimes Bill), I live on <a href="">Sydneys' Northern Beaches</a>,
+  Hi, I'm William (aka Bill), I live on <a href="">Sydneys' Northern Beaches</a>,
   where I enjoy <a href="">running</a>, <a href="">swimming</a>, and
   <a href="">slowly making things in my workshop</a>.
 </p>
