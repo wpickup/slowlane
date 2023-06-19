@@ -7,6 +7,10 @@ title: Now
 
 (This is <a href="https://nownownow.com/about">a now page</a>, and if you have your own site, <a href="https://nownownow.com/about">you should make one</a>, too.)
 
+Updated Jun 19th, 2023
+
+Recovering from COVID, took a while to get it but hit me hard...
+
 Updated May 18th, 2023.
 
 Getting into being 60, some things are harder, others easier.
