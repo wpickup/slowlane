@@ -24,8 +24,8 @@ const outputFolder = "output";
 // You can also support custom base_path deployments via changing `publicPath`.
 //
 // ```
-//const esbuildOptions = { publicPath: "williampickup" };
-const esbuildOptions = {};
+const esbuildOptions = { publicPath: "williampickup" };
+//const esbuildOptions = {};
 // ```
 
 /**
