@@ -11,8 +11,8 @@ There are some excellent galleries in Sydney that focus on displaying the work o
 
 I am sure its a labour of love for most of the gallery owners as the market is not large and the work required to mount a successful exhibition is signifcant.
 
-Chinaclay
-Kerrie Lowe
-Sabbia
+- Chinaclay
+- Kerrie Lowe
+- Sabbia
 
 If in the mood to travel further afield, the galley at the Sturt College in Mittagong always has an eclectic mix of work in particular furniture and ceramics.
