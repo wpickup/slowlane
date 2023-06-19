@@ -1,9 +1,9 @@
 <nav>
   <ul>
     <%= render "nav_links", links:
-        { "Home" => "/",
-          "Blog" => "/posts",
-          "Now" => "/now",
-          "About" => "/about" } %>
+        { "Home" => relative_url "/",
+          "Blog" => relative_url "/posts",
+          "Now" => relative_url "/now",
+          "About" => relative_url "/about" } %>
   </ul>
 </nav>
