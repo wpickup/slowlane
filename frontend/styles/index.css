@@ -635,7 +635,7 @@ dialog::backdrop {
   display: block;
   height: 100px;
   width: 100%;
-  backgroud: var(--accent)
+  backgroud: var(--accent);
   /* background: #3d0e61; */
   margin: 0px;
   z-index: 9;
