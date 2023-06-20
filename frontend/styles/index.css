@@ -516,15 +516,3 @@ blockquote.example.fixed:after {
   }
 
 }
-
-#logo a {
-	opacity: 0.9;
-	text-decoration: none;
-}
-
-#logo {
-	font-family: "Literata", "Cambria", "Roboto Slab", Georgia, "Times New Roman", serif;
-	font-weight: 850;
-	font-variation-settings: "opsz" 52;
-}
-
