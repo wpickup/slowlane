@@ -617,138 +617,93 @@ dialog::backdrop {
 
 /* WP extentions */
 
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
-  overflow: hidden;
-  background: black;
-  z-index: -1;
-}
-
-#main-menu {
-  display: block;
-  height: 100px;
-  width: 100%;
-  backgroud: var(--accent);
-  /* background: #3d0e61; */
-  margin: 0px;
-  z-index: 9;
-}
-
-#main-menu ul {
-  max-width: 800px;
-  width: 100%;
-  height: 100%;
-  margin: 0px auto;
-  padding: 0px;
+.navbar {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  z-index: 9;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: teal;
+  color: #fff;
 }
 
-#main-menu li {
-  list-style-type: none;
-  font-size: 2rem;
+.nav-links a {
+  color: #fff;
 }
 
-#main-menu a {
-  color: var(--text);
-  /* color: #b9faf8; */
-  font-size: 1.5rem;
-  text-decoration: none;
+/* LOGO */
+.logo {
+  font-size: 32px;
 }
 
-#main-menu a:hover {
-  text-decoration: underline;
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
 }
 
-#hamburger-input {
+.menu li:hover {
+  background-color: #4c9e9e;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+/* RESPONSIVE NAVBAR MENU STARTS */
+
+/* CHECKBOX HACK */
+
+input[type="checkbox"] {
   display: none;
 }
 
-#hamburger-menu {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  width: 40px;
-  height: 40px;
+/* HAMBURGER MENU */
+.hamburger {
   display: none;
-  border: none;
-  padding: 0px;
-  margin: 0px;
-  background: linear-gradient(
-    to bottom,
-    var(--accent),
-    var(--accent) 20%,
-    white 20%,
-    white 40%,
-    var(--accent) 40%,
-    var(--accent) 60%,
-    white 60%,
-    white 80%,
-    var(--accent) 80%,
-    var(--accent) 100%
-  );
+  font-size: 24px;
+  user-select: none;
 }
 
-#hamburger-menu #sidebar-menu {
-  visibility: hidden;
-  position: fixed;
-  top: 0;
-  left: -250px;
-  width: 200px;
-  height: 100%;
-  background-color: #3d0e61;
-  transition: 0.3s;
-  padding: 0px 10px;
-  box-sizing: border-box;
-}
-
-#hamburger-menu h3 {
-  color: var(--text);
-  font-size: 2.2rem;
-}
-
-#hamburger-menu ul {
-  padding-left: 0px;
-}
-
-#hamburger-menu li {
-  list-style-type: none;
-  line-height: 3rem;
-}
-
-#hamburger-menu a {
-  color: #b9faf8;
-  font-size: 1.3rem;
-  text-decoration: none;
-}
-
-#hamburger-menu a:hover {
-  text-decoration: underline;
-}
-
-#hamburger-input:checked + #hamburger-menu #sidebar-menu {
-  visibility: visible;
-  left: 0;
-}
-#hamburger-input:checked ~ .overlay {
-  visibility: visible;
-  opacity: 0.4;
-}
-
-@media screen and (max-width: 750px) {
-  #main-menu {
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+  .menu {
     display: none;
+    position: absolute;
+    background-color: teal;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
   }
-  #hamburger-menu {
-    display: inline;
+
+  .menu li:hover {
+    display: inline-block;
+    background-color: #4c9e9e;
+    transition: 0.3s ease;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+
+  .dropdown li:hover {
+    background-color: #4c9e9e;
   }
 }

@@ -1,9 +1,14 @@
-<nav id="main-menu">
-  <ul>
-    <%= render "nav_links", links:
-        { "William Pickup" => "/",
-          "Blog" => "/posts",
-          "Now" => "/now",
-          "About" => "/about" } %>
+<nav class="navbar">
+  <div class="logo"> William Pickup</div>
+  <ul class="nav-links">
+    <input type="checkbox" id="checkbox_toggle" />
+    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+    <div class="menu">
+      <%= render "nav_links", links:
+          { "William Pickup" => "/",
+            "Blog" => "/posts",
+            "Now" => "/now",
+            "About" => "/about" } %>
+    </div>
   </ul>
 </nav>
