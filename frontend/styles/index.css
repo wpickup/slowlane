@@ -129,7 +129,6 @@ header > nav {
   font-size: 1.2rem;
   padding: 0.5rem 0;
   display: flex;
-<<<<<<< HEAD
   justify-content: flex-end;
   align-items: center;
   gap: 1rem;
@@ -137,11 +136,9 @@ header > nav {
 
 header > nav a {
   text-decoration: none;
-=======
   justify-content: right;
   gap: 1.5rem;
   font-size: 1.3rem;
->>>>>>> main
   font-weight: bold;
   font-variant: small-caps;
   text-transform: lowercase;
