@@ -12,7 +12,7 @@ The most popular post on Slowlane has been [Ceramics Destinations in Kyoto](http
 
 ***
 #### [Mingeikan](http://www.mingeikan.or.jp/english/info/ "Mingeikan")
-![Mingeikan Sign](images/_IMG-0063-1024x591.jpg)
+![Mingeikan Sign](https://media.publit.io/file/Mingkeikan-sign.jpg)
 
 Also known as the Japan Folk Crafts Museum. [Soetsu Yanagi](http://en.m.wikipedia.org/wiki/Yanagi_S%C5%8Detsu) [^3] created this museum to display his collection of mingei items (daily necessities made by common people using local materials)It displays a collection of mingei pottery, textiles and lacquer ware. Feature [exhibitions](http://www.mingeikan.or.jp/english/exhibition/) are also held regularly. During our visit the main gallery was showing "KANTHA and SASHIKO - Needle Works from Bengal and Tohoku".
 
