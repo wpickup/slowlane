@@ -88,7 +88,7 @@ body > nav ul {
   padding: 0;
   list-style-type: none;
   display: flex;
-  justify-content: left;
+  justify-content: right;
   gap: 1.5rem;
   font-size: 1.3rem;
   font-weight: bold;
@@ -124,3 +124,15 @@ body > header img {
   width: 400px;
   max-width: 100%;
 }
+
+#logo a {
+	opacity: 0.9;
+	text-decoration: none;
+}
+
+#logo {
+	font-family: "Literata", "Cambria", "Roboto Slab", Georgia, "Times New Roman", serif;
+	font-weight: 850;
+	font-variation-settings: "opsz" 52;
+}
+
