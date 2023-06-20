@@ -129,6 +129,165 @@ a:hover {
   text-decoration: none;
 }
 
+button,
+[role="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  border: none;
+  border-radius: var(--border-radius);
+  background: var(--accent);
+  font-size: 1.2rem;
+  color: var(--bg);
+  padding: 0.5rem 0.9rem;
+  margin: 0.5rem 0;
+  font-weight: bold;
+  min-width: 8rem;
+}
+
+.small,
+button.small,
+input.small {
+  font-size: var(--font-size-small);
+}
+
+.tiny {
+  font-size: var(--font-size-tiny);
+}
+
+button.small,
+input.small {
+  min-width: 6rem;
+}
+
+.facebook {
+  background: #1877f2;
+  color: white;
+}
+
+.twitter {
+  background: #1d9bf0;
+  color: white;
+}
+
+.copy-link {
+  background: #8e66d0; /* 63f */
+  color: white;
+  width: 7rem;
+}
+
+.kofi {
+  margin-left: 0.5rem;
+}
+
+.copy-link.copied {
+  background: #3a3;
+  transition: background 0.2s ease-out;
+}
+
+a button.copy-link.copied {
+  text-decoration: none;
+}
+
+button.topic {
+  border: 2px solid var(--text-light);
+  border-radius: 2rem;
+  color: var(--text-light);
+  background: none;
+  font-size: var(--font-size-small);
+  font-weight: normal;
+  font-variant: small-caps;
+  padding: 0.1rem 0.7rem 0.2rem 0.7rem;
+  min-width: 0;
+}
+
+a:hover button.topic {
+  text-decoration: none;
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0.6rem 0.5rem;
+  margin-top: 2rem;
+}
+
+.buttons.center {
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .buttons {
+    justify-content: center;
+  }
+}
+
+.buttons p {
+  width: 100%;
+  margin: 0;
+  font-weight: bold;
+}
+
+.buttons button {
+  margin: 0;
+  min-width: 4rem;
+  padding: 0.4rem 0.6rem;
+  color: var(--bg);
+}
+
+.buttons.mono button {
+  background: var(--accent);
+  color: white;
+}
+
+button[disabled],
+[role="button"][aria-disabled="true"],
+input[type="submit"][disabled],
+input[type="reset"][disabled],
+input[type="button"][disabled],
+input[type="checkbox"][disabled],
+input[type="radio"][disabled],
+select[disabled] {
+  cursor: default;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+input:disabled,
+textarea:disabled,
+select:disabled {
+  cursor: not-allowed;
+  background-color: var(--disabled);
+}
+
+input[type="range"] {
+  padding: 0;
+}
+
+/* Set the cursor to '?' while hovering over an abbreviation */
+abbr {
+  cursor: help;
+}
+
+button:focus,
+button:enabled:hover,
+[role="button"]:focus,
+[role="button"]:not([aria-disabled="true"]):hover,
+input[type="submit"]:focus,
+input[type="submit"]:enabled:hover,
+input[type="reset"]:focus,
+input[type="reset"]:enabled:hover,
+input[type="button"]:focus,
+input[type="button"]:enabled:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.2rem;
+  text-underline-offset: 0.3rem;
+  cursor: pointer;
+}
+
 /* Navigation */
 
 header > nav {
