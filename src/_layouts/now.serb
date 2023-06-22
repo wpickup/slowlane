@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+{% now_entry = resource.data.current_now_entry.presence || resource %}
+{% is_entry_now = now_entry == collections.now_entries.resources.first %}
+{% if now_entry.collection.label == "now_entries" %}
+  <h2>
+    {% if is_entry_now %}
+      {{ "destinations.now.name" | t }}
+    {% else %}
+      {{ "destinations.now.then" | t }} <small>({{ now_entry.date | strftime: "%b. %-d, %Y" }})</small>
+    {% end %}
+    <sl-icon
+      library="remixicon"
+      name="{{ "destinations.now.icon" | t }}"
+    ></sl-icon>
+  </h2>
+
+  <article>
+    {%= markdownify do %}
+
+      {% if is_entry_now %}
+        > Derek Sivers [kicked off a movement](https://sive.rs/nowff){:target="_blank"} of people [publishing Now pages](https://nownownow.com/about){:target="_blank"} on their websites to share what they're focused on _right now_, and I think that's a cool idea, so here's mine!
+      {% end %}
+
+    {% end %}
+
+    {{ now_entry.content }}
+  </article>
+
+  {% if is_entry_now %}
+    {%= markdownify do %}
+----
+
+{:.text-center}
+**Posted on {{ now_entry.date | strftime: "%B %-d, %Y" }}**
+    {% end %}
+  {% end %}
+
+  {% if collections.now_entries.resources.length > 1 %}
+    <a-card style="margin-top:4rem">
+      <h3>“Now Page” Archive</h3>
+
+      <ul>
+        {% collections.now_entries.resources.each do |entry| %}
+          {% next if entry == now_entry %}
+          <li>
+            {{ entry.date | strftime: "%B %-d, %Y" | link_to: entry.relative_url }}
+            {{ "(current)" if entry == collections.now_entries.resources.first }}
+          </li>
+        {% end %}
+      </ul>
+    </a-card>
+  {% end %}
+
+  <hr />
+
+  <a-card>
+    {%= site.data.cached_newsletter_preamble ||= render("newsletter_preamble") %}
+    {%= site.data.cached_newsletter_form ||= render("newsletter_form") %}
+  </a-card>
+{% else %}
+  {%= site.resources.find {|r| r.relative_url.start_with?("/404") }.content %}
+{% end %}
