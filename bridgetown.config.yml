@@ -32,3 +32,5 @@ production:
 # timezone: America/Los_Angeles
 pagination:
   enabled: true
+  title: ":title (pg. :num)"
+  per_page: 15
